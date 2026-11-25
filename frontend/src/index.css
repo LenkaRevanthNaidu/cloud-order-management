@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Login and Register */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.auth-card {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.auth-card p {
+    margin: 15px 0;
+    color: #64748b;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.auth-card button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.auth-card a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.error {
+    color: #dc2626;
+    background: #fee2e2;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Dashboard */
+
+.dashboard {
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    background: #1e293b;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header button {
+    background: #dc2626;
+}
+
+.dashboard main {
+    padding: 35px 5%;
+}
+
+.dashboard main h2 {
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #e2e8f0;
+}
+
+@media (max-width: 600px) {
+    .dashboard main {
+        padding: 20px 10px;
+        overflow-x: auto;
+    }
+
+    .dashboard-header h2 {
+        font-size: 17px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
